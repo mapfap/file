@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style>
+
+      @font-face {
+        font-family: Kanit;
+        src: url('Kanit.woff2');
+      }
+
+      body {
+        font-family: 'Kanit';
+      }
+
+      .box__file {
+        background: #e5e5e5;
+        padding: 1em;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: 'Kanit';
+      }
+
+      .box__button {
+        background-color: #e25735;
+        border: none;
+        color: white;
+        padding: 0.8em 1em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: 'Kanit';
+      }
+
+    </style>
+  </head>
+  <body>
+    <a href="/data">Public Directory</a>
+    <h1> Upload new files</h1>
+    <form class="box" method="post" action="/" enctype="multipart/form-data">
+      <input class="box__file" type="file" name="files" id="file" multiple />  
+      <button class="box__button" type="submit">Upload</button>
+    </form>
+  </body>
+</html>
+
+
